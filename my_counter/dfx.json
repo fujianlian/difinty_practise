@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "dfx": "0.8.4",
+  "canisters": {
+    "my_counter": {
+      "type": "motoko",
+      "main": "src/my_counter/increment_counter.mo"
+    },
+    "my_counter_http": {
+      "type": "motoko",
+      "main": "src/my_counter_http/increment_counter.mo"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
