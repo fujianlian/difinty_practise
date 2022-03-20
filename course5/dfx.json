@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "course5": {
+      "main": "src/course5/main.mo",
+      "type": "motoko"
+    },
+    "course5_assets": {
+      "dependencies": [
+        "course5"
+      ],
+      "frontend": {
+        "entrypoint": "src/course5_assets/src/index.html"
+      },
+      "source": [
+        "src/course5_assets/assets",
+        "dist/course5_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
